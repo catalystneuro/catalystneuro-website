@@ -1,0 +1,146 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: static/assets/img
+public_folder: assets/img
+collections:
+  - name: 'blog_single'
+    label: 'Blog'
+    folder: 'content/blog'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog_single' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Categories', name: 'categories', widget: 'list' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Content', name: 'body', widget: 'markdown' }
+      - { label: 'Type', name: 'type', widget: 'select', options: ['featured', 'other'], default: 'other' }
+
+  - name: 'clients'
+    label: 'Clients'
+    folder: 'content/portfolio'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Tag Bar', name: 'tag_bar', widget: 'string' }
+      - { label: 'Subtitle', name: 'sub_title', widget: 'string' }
+      - { label: 'Details', name: 'body', widget: 'markdown' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'ID', name: 'id', widget: 'string' }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'portfolio' }
+      - { label: 'Weight', name: 'weight', widget: 'number' }
+      - { label: 'Type', name: 'type', widget: 'select', options: ['featured-entery', 'other'], default: 'other' }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "data/home.yml"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: 'Hero Heading', name: 'hero_heading', widget: 'string' }
+          - { label: 'Hero Paragraph', name: 'hero_paragraph', widget: 'text' }
+          - { label: 'Hero Image', name: 'hero_image', widget: 'image' }
+          - { label: 'Mission Heading', name: 'mission_heading', widget: 'string' }
+          - { label: 'Mission Paragraph 1', name: 'mission_paragraph_1', widget: 'text' }
+          - { label: 'Mission Paragraph 2', name: 'mission_paragraph_2', widget: 'text' }
+          - { label: 'Mission Image', name: 'mission_image', widget: 'image' }
+          - { label: 'Software Heading', name: 'software_heading', widget: 'string' }
+          - { label: 'Software Paragraph 1', name: 'software_paragraph_1', widget: 'text' }
+          - { label: 'Software Paragraph 2', name: 'software_paragraph_2', widget: 'text' }
+          - { label: 'Software Paragraph 3', name: 'software_paragraph_3', widget: 'text' }
+          - { label: 'Software Image', name: 'software_image', widget: 'image' }
+          - { label: 'Clients Heading', name: 'clients_heading', widget: 'string' }
+          - { label: 'Clients Paragraph', name: 'clients_paragraph', widget: 'text' }
+          - { label: 'CTA Heading', name: 'cta_heading', widget: 'string' }
+          - { label: 'CTA Paragraph', name: 'cta_paragraph', widget: 'text' }
+          - { label: 'CTA Image', name: 'cta_image', widget: 'image' }
+          
+      - file: "data/mission.yml"
+        label: "Mission"
+        name: "mission"
+        fields:
+        - { label: 'Main Heading', name: 'main_heading', widget: 'string' }
+        - { label: 'Card Image', name: 'card_image', widget: 'image' }
+        - { label: 'Card Paragraph 1', name: 'card_paragraph_1', widget: 'text' }
+        - { label: 'Card Paragraph 2', name: 'card_paragraph_2', widget: 'text' }
+
+      - file: "data/software.yml"
+        label: "Software"
+        name: "software"
+        fields:
+        - { name: "main_heading", label: "Main Heading", widget: "string" }
+        - { name: "card_image", label: "Card Image", widget: "image" }
+        - { name: "card_paragraph", label: "Card Paragraph", widget: "markdown" }
+        - name: "faqs"
+          label: "FAQs"
+          widget: "list"
+          fields:
+          - { name: "name", label: "Name", widget: "string" }
+          - { name: "faq_number", label: "FAQ Number", widget: "number" }
+          - { name: "image", label: "Image", widget: "image" }
+          - { name: "heading", label: "Heading", widget: "string" }
+          - name: "details"
+            label: "details"
+            widget: "list"
+            fields:
+            - { name: "paragraph", label: "paragraph", widget: "string" }
+        - name: "repositories"
+          label: "Repositories"
+          widget: "list"
+          fields:
+          - { name: "name", label: "Name", widget: "string" }
+          - { name: "url", label: "URL", widget: "string" }
+
+      - file: "data/team.yml"
+        label: "Team"
+        name: "team"
+        fields:
+        - { label: 'Main Heading', name: 'main_heading', widget: 'string', default: 'Our Team' }
+        - { label: 'Current Team Card', name: 'current_team_card', widget: 'list', fields: [
+            { label: 'Image', name: 'image', widget: 'image' },
+            { label: 'Name', name: 'name', widget: 'string' },
+            { label: 'Card Number', name: 'card_number', widget: 'number' },
+            { label: 'Post', name: 'post', widget: 'string' },
+            { label: 'Bio', name: 'bio', widget: 'text' },
+            { label: 'More Bio', name: 'more_bio', widget: 'text' },
+            { label: 'Github', name: 'github', widget: 'string' },
+            { label: 'Website', name: 'website', widget: 'string' },
+            { label: 'Facebook', name: 'facebook', widget: 'string' },
+            { label: 'Twitter', name: 'twitter', widget: 'string' },
+            { label: 'Linkedin', name: 'linkedin', widget: 'string' }
+            ]
+          }
+        - { label: 'Collaborators', name: 'collaborators', widget: 'list', default: [], required: false }
+        - { label: 'Alumni', name: 'alumni', widget: 'list', default: [], required: false }
+        - { label: 'Job Opening Heading', name: 'job_openining_heading', widget: 'string', default: 'Job Openings' }
+        - { label: 'Job Opening Paragraph', name: 'job_openining_paragraph', widget: 'text' }
+
+      - file: "data/work.yml"
+        label: "Work with us"
+        name: "work"
+        fields:
+        - { label: 'Main Heading', name: 'main_heading', widget: 'string', default: 'Job Openings' }
+        - { label: 'Card Heading', name: 'card_heading', widget: 'string', default: 'OUR CULTURE' }
+        - { label: 'Card Paragraph', name: 'card_paragraph', widget: 'text', default: 'Please write paragraph for this card in CMS' }
+        - { label: 'Card Image', name: 'card_image', widget: 'image', default: 'assets/img/culture.png' }
+        - { label: 'New Job', name: 'new_job', widget: 'list', fields: [
+            { label: 'Post', name: 'post', widget: 'string' },
+            { label: 'Date', name: 'date', widget: 'string' },
+            { label: 'Type', name: 'type', widget: 'string' },
+            { label: 'Job Number', name: 'job_number', widget: 'number' },
+            { label: 'Work', name: 'work', widget: 'string' },
+            { label: 'Summary', name: 'summary', widget: 'text' },
+            { label: 'Essential Functions', name: 'essential_functions', widget: 'list', field: { widget: 'string', name: 'function' } },
+            { label: 'Requirements', name: 'requirements', widget: 'list', field: { widget: 'string', name: 'requirement' } }
+          ]
+        }
