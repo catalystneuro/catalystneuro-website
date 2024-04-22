@@ -1134,7 +1134,7 @@ article blockquote::before {
   margin: 0px;
   padding: 0px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
 }
 .team .card .social ul li {
@@ -1173,6 +1173,17 @@ article blockquote::before {
   border: 1px solid #d9dde8;
   background: #fff;
   box-shadow: 0px 10px 30px 0px rgba(98, 105, 111, 0.1);
+}
+
+.work-with-us .video {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .work-with-us .video {
+      width: 50%;
+  }
 }
 
 /*--------------------------------------------------------------
