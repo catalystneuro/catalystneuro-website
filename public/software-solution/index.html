@@ -30,15 +30,6 @@
 
   
   <link href="http://localhost:1313//assets/css/main.css" rel="stylesheet" />
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var newVideo = document.getElementById('newVideo');
-      newVideo.addEventListener('loadedmetadata', function () {
-        newVideo.currentTime = 1.5; 
-      });
-    });
-  </script>
 </head>
 
   <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
@@ -56,19 +47,19 @@
 
     
     <nav id="navmenu" class="navmenu">
-      <ul>
+      <ul class="headlist">
         <li><a href="http://localhost:1313/" class="active">Home</a></li>
         <li><a href="http://localhost:1313//mission">Mission</a></li>
-        <li class="dropdown has-dropdown">
-          <a href="#"
-            ><span>Portfolio</span> <i class="bi bi-chevron-down"></i
-          ></a>
-          <ul class="dd-box-shadow">
-            <li>
-              <a href="http://localhost:1313//software-solution">Software</a>
+        <li class="dropdown-center">
+          <button class="dropdown-toggle border-0 bg-transparent w-100" data-bs-toggle="dropdown" type="button">
+            <span>Portfolio</span>
+          </button>
+          <ul class="dropdown-menu w-100">
+            <li class="text-center">
+              <a class="dropdown-item" href="http://localhost:1313//software-solution">Software</a>
             </li>
 
-            <li><a href="http://localhost:1313//portfolio">Client</a></li>
+            <li class="text-center"><a class="dropdown-item" href="http://localhost:1313//portfolio">Client</a></li>
           </ul>
         </li>
 
@@ -168,7 +159,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#faq-content-1"
               >
-              1. NWB GUIDE
+              NWB GUIDE
               </button>
             </h3>
             <div
@@ -180,7 +171,7 @@
                 <div class="row mt-5">
                   <div class="col-lg-6 d-block d-lg-none mb-5">
                     <img
-                      src="/assets/img/nwb.png"
+                      src="/assets/img/logo-guide-draft-transparent-tight.png"
                       alt=""
                       class="img-fluid"
                     />
@@ -192,23 +183,15 @@
                       NWB GUIDE is a desktop app that provides a no-code user interface for converting neurophysiology data to NWB.
                     </p>
                     
-                    <p class="pb-2">
-                      Aenean vestibulum molestie purus, eget rutrum ligula euismod quis. Duis ante diam, rutrum non quam vitae, sodales semper metus. Duis tempus velit mi. Sed et est enim. Nulla ex elit, ultricies non est a, dignissim cursus dui. Sed sed gravida sapien. Curabitur sed nulla eleifend, blandit metus nec, ullamcorper erat.
-                    </p>
-                    
-                    <p class="pb-2">
-                      Phasellus sagittis, arcu eget eleifend tempor, magna augue viverra libero, fringilla tempor lacus eros nec justo. Sed nec sollicitudin ante, accumsan hendrerit ipsum. Praesent tincidunt, nisl et convallis luctus, ex enim tristique justo.
-                    </p>
-                    
                     <ul class="flex-row gap-3">
                       
-                      <li class="btn p-0"><a class="btn-getstarted" href="/">
+                      <li class="btn p-0"><a class="btn-getstarted" href="https://nwb-guide.readthedocs.io/en/latest/">
                         Documentation
                         <i class="bi bi-arrow-up-right text-light"> </i>
                       </a></li>
                       
                       
-                      <li class="btn p-0"><a class="btn-getstarted" href="/">
+                      <li class="btn p-0"><a class="btn-getstarted" href="https://github.com/NeurodataWithoutBorders/nwb-guide">
                         Github
                         <i class="bi bi-arrow-up-right text-light"> </i>
                       </a></li>
@@ -218,7 +201,7 @@
 
                   <div class="col-lg-6 d-none d-lg-block">
                     <img
-                      src="/assets/img/nwb.png"
+                      src="/assets/img/logo-guide-draft-transparent-tight.png"
                       alt=""
                       class="img-fluid"
                     />
@@ -236,7 +219,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#faq-content-2"
               >
-              2. NWB GUIDE
+              NeuroConv
               </button>
             </h3>
             <div
@@ -248,40 +231,41 @@
                 <div class="row mt-5">
                   <div class="col-lg-6 d-block d-lg-none mb-5">
                     <img
-                      src="/assets/img/nwb.png"
+                      src="/assets/img/neuroconv_logo.png"
                       alt=""
                       class="img-fluid"
                     />
                   </div>
                   <div class="col-lg-6">
-                    <h3>NWB Graphical User Interface for Data </h3>
+                    <h3>NeuroConv</h3>
                     
                     <p class="pb-2">
-                      NWB GUIDE is a desktop app that provides a no-code user interface for converting neurophysiology data to NWB.
+                      Automatically convert neurophysiology data to NWB
                     </p>
                     
                     <p class="pb-2">
-                      Aenean vestibulum molestie purus, eget rutrum ligula euismod quis. Duis ante diam, rutrum non quam vitae, sodales semper metus. Duis tempus velit mi. Sed et est enim. Nulla ex elit, ultricies non est a, dignissim cursus dui. Sed sed gravida sapien. Curabitur sed nulla eleifend, blandit metus nec, ullamcorper erat.
-                    </p>
-                    
-                    <p class="pb-2">
-                      Phasellus sagittis, arcu eget eleifend tempor, magna augue viverra libero, fringilla tempor lacus eros nec justo. Sed nec sollicitudin ante, accumsan hendrerit ipsum. Praesent tincidunt, nisl et convallis luctus, ex enim tristique justo.
+                      NeuroConv is a Python package for converting neurophysiology data in a variety of proprietary formats to the Neurodata Without Borders (NWB) standard.  Features:  Reads data from 40 popular neurophysiology data formats and writes to NWB using best practices. Extracts relevant metadata from each format. Handles large data volume by reading datasets piece-wise. Minimizes the size of the NWB files by automatically applying chunking and lossless compression. Supports ensembles of multiple data streams, and supports common methods for temporal alignment of streams.
                     </p>
                     
                     <ul class="flex-row gap-3">
                       
-                      <li class="btn p-0"><a class="btn-getstarted" href="/">
+                      <li class="btn p-0"><a class="btn-getstarted" href="https://neuroconv.readthedocs.io/en/main/">
                         Documentation
                         <i class="bi bi-arrow-up-right text-light"> </i>
                       </a></li>
                       
+                      
+                      <li class="btn p-0"><a class="btn-getstarted" href="https://github.com/catalystneuro/neuroconv/">
+                        Github
+                        <i class="bi bi-arrow-up-right text-light"> </i>
+                      </a></li>
                       
                     </ul>
                   </div>
 
                   <div class="col-lg-6 d-none d-lg-block">
                     <img
-                      src="/assets/img/nwb.png"
+                      src="/assets/img/neuroconv_logo.png"
                       alt=""
                       class="img-fluid"
                     />
@@ -383,8 +367,8 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/mission">Mission</a></li>
-          <li><a href="/software">Software</a></li>
-          <li><a href="/clients">Clients</a></li>
+          <li><a href="/software-solution">Software</a></li>
+          <li><a href="/portfolio">Clients</a></li>
           <li><a href="/team">Team</a></li>
         </ul>
       </div>
@@ -392,7 +376,7 @@
       <div class="col-lg-2 col-6 footer-links my-padi">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="/work-wih-us">Work with us</a></li>
+          <li><a href="/work-with-us">Work with us</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="mailto:contact@website.com">Contact Us</a></li>
         </ul>

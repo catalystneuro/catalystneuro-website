@@ -12,7 +12,7 @@ current_team_card:
     twitter: ""
     card_number: 1
     website: https://bendichter.com/
-    image: assets/img/profile-b.jpg
+    image: /assets/img/profile-b.jpg
     linkedin: ""
     more_bio: Much of this work focused on how we control the pitch of our voice
       when we speak and sing. He is now a data scientist consultant for
@@ -20,14 +20,14 @@ current_team_card:
       analyses.
   - post: Lead Neurodata Scientist
     github: https://github.com/luiztauffer
-    facebook: /
+    facebook: ""
     bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
       is currently at the late stages of his PhD in Computational Neuroscience.
     name: Luiz Tauffer
-    twitter: /
+    twitter: ""
     card_number: 2
     website: https://luiztauffer.github.io/guacamole-data-science/
-    image: assets/img/luiz-tauffer.jpeg
+    image: /assets/img/luiz-tauffer.jpg
     linkedin: https://www.linkedin.com/in/luiz-tauffer
     more_bio: His research work has been focused on mathematical modelling of
       biological systems and behaviour, i.e. machine learning and data science
@@ -35,49 +35,100 @@ current_team_card:
       for more general machine learning / data science consultancy and software
       development.
   - post: Lead Neurodata Scientist
-    github: /
-    facebook: /
-    bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
-      am currently at the late stages of his PhD in Computational Neuroscience.
-    name: Luiz Tauffer
-    twitter: /
+    github: ""
+    facebook: ""
+    bio: "Alessio Buccino has a BSc and MSc in biomedical engineering and an MSc in
+      computer science. "
+    name: Alessio Buccino, PhD
+    twitter: ""
     card_number: 3
-    website: /
-    image: assets/img/team-1.png
-    linkedin: /
-    more_bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical
-      Engineering and am currently at the late stages of his PhD in
-      Computational Neuroscience.
-  - post: Lead Neurodata Scientist
-    github: "#"
-    facebook: "#"
-    bio: Helen has a BSc in Electrical Engineering, MSc in Biomedical Engineering
-      and am currently at the late stages of his PhD in Computational
-      Neuroscience.
-    name: Helen
-    twitter: "#"
+    website: https://scholar.google.com/citations?user=UmLW1NAAAAAJ&hl=en
+    image: /assets/img/alessio_profile.jpg
+    linkedin: ""
+    more_bio: During his PhD at the University of Oslo, he explored the use of
+      advanced modeling techniques and engineering solution to improve the
+      state-of-the-art methods in extracellular electrophysiology for
+      high-density neural probes, from spike sorting to selective electrical
+      stimulation. Alessio is the lead architect of the SpikeInterface platform.
+      He is currently a Postdoc at ETH and he is working on combining multiple
+      recording modalities to build accurate and better validated single neuron
+      models.
+  - post: Sr. Neurodata Scientist
+    github: ""
+    facebook: ""
+    bio: "Cody earned his PhD in Applied and Computational Mathematics and
+      Statistics (ACMS) at the University of Notre Dame while working in the
+      Rosenbaum Group for Theoretical and Computational Neuroscience. "
+    name: Cody Baker, PhD
+    twitter: ""
     card_number: 4
-    website: "#"
-    image: assets/img/team-3.png
-    linkedin: "#"
-    more_bio: Helen has a BSc in Electrical Engineering, MSc in Biomedical
-      Engineering and am currently at the late stages of his PhD in
-      Computational Neuroscience.
-  - post: Lead Neurodata Scientist
-    github: "#"
-    facebook: "#"
-    bio: Allen has a BSc in Electrical Engineering, MSc in Biomedical Engineering
-      and am currently at the late stages of his PhD in Computational
-      Neuroscience.
-    name: Ken Allen
-    twitter: "#"
+    website: ""
+    image: /assets/img/codybakerpic.jpg
+    linkedin: ""
+    more_bio: His thesis focused on inference problems for second-order moments of
+      activity in biological neural networks, including spike-time correlations,
+      balance regimes, and synaptic structure. In particular, his primary
+      interests focus on information processing and flow through biophysical
+      neural models, which can eventually allow a thorough understanding of
+      high-level cognitive function.
+  - post: Neurodata Scientist
+    github: ""
+    facebook: ""
+    bio: Ramón Heberto Martinez Mayorquin has a BSC in Physics and an MSc in
+      Complexity Science and a Ph.D. in Computational Neuroscience.
+    name: Ramón Mayorquin, PhD
+    twitter: ""
     card_number: 5
-    website: "#"
-    image: assets/img/team-2.png
-    linkedin: "#"
-    more_bio: Allen has a BSc in Electrical Engineering, MSc in Biomedical
-      Engineering and am currently at the late stages of his PhD in
-      Computational Neuroscience.
+    website: ""
+    image: /assets/img/ramon_square.jpg
+    linkedin: ""
+    more_bio: During his Ph.D., he studied in the theoretical and computational
+      study of associative neural networks (e.g. Hopfield Network). During his
+      studies, he has developed an interest in software practices that assure
+      efficient, reproducible, and robust scientific simulations. This, together
+      with his love for statistics and data wrangling has led him to move
+      forward with a career in data science where he can combine and further
+      develop those interests.
+  - name: Garrett Flynn
+    card_number: 6
+    post: Neurodata Programmer
+    image: /assets/img/garrett.jpg
+    bio: "Garrett Flynn is a graduate of the Computational Neuroscience (BS) and
+      Media Arts, Games, and Health (MA) programs at the University of Southern
+      California. "
+    more_bio: His interdisciplinary thesis focused on the use of web technologies to
+      build brain-computer interface systems with and for everyone. As a
+      founding partner of Brains@Play, he develops biomedical infrastructure on
+      the Open Web with research universities and organizations like Catalyst
+      Neuro.
+    github: https://github.com/garrettmflynn
+    website: https://www.garrettflynn.com
+  - name: Paul Adkisson
+    post: Neurodata Programmer
+    card_number: 8
+    bio: "Paul Adkisson received his B.S. in Neuroscience from the University of
+      California Los Angeles and his M.S.E. in Biomedical Engineering from Johns
+      Hopkins. "
+    more_bio: In his Master’s research, he investigated the effects of different
+      types of electrical stimulation on networks of neurons using computational
+      models.  Now, he works on the SpikeInterface platform to develop modular
+      spike sorting pipelines available to all.  In his free time he enjoys rock
+      climbing and backpacking.
+    image: /assets/img/paul_profile.jpg
+  - name: Anna (Szonja) Weigl
+    card_number: 9
+    post: Neurodata Programmer
+    bio: Szonja comes from the interdisciplinary field between computer science and
+      neuroscience. She holds a BSc and MSc in Info-bionics Engineering, and has
+      experience in software development.
+    more_bio: She is keen to learn about and to build reliable, scalable, and
+      maintainable data analysis tools and pipelines. Besides working at
+      CatalystNeuro, she is also working at the Lyon Neuroscience Research
+      Center (CRNL) as an Engineer in a research group interested in learning
+      and memory in the field of Cognitive Neuroscience.
+    github: https://github.com/weiglszonja
+    linkedin: https://www.linkedin.com/in/weiglszonja/
+    image: /assets/img/id_weigl.jpg
 collaborators:
   - collaborator: Oliver Ruebel
   - collaborator: Ryan Ly

@@ -3,16 +3,17 @@
 <section id="hero" class="hero">
   <div class="container">
     <div class="row align-items-center d-flex justify-content-between">
-      <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-12 my-padi" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-12 my-padi mt-0" data-aos="fade-up" data-aos-delay="200">
         <h2>{{ .Site.Data.home.hero_heading }}</h2>
         <br />
-        <p>
+        <p class="pb-5">
           {{ .Site.Data.home.hero_paragraph }}
         </p>
         <div class="btn m-0 p-0 mt-5">
-          <a class="btn-getstarted" href="mailto:contact@website.com">Contact Us <i
-              class="bi bi-arrow-up-right"></i></a>
+          <a class="btn-getstarted" href="mailto:contact@website.com">Contact Us <i class="bi bi-arrow-up-right"></i></a>
+        
         </div>
+      
       </div>
       <div class="col-xxl-7 col-lg-7 col-md-7 col-sm-12 img">
         <img data-aos="fade-up" data-aos-delay="100" src="{{ .Site.BaseURL }}{{ .Site.Data.home.hero_image }}"
@@ -63,7 +64,7 @@
           {{ .Site.Data.home.software_paragraph_3 }}
         </p>
         <div class="btn m-0 p-0 mt-5">
-          <a class="btn-getstarted" href="/contact-us">Explore more <i class="bi bi-arrow-up-right"></i></a>
+          <a class="btn-getstarted" href="https://voluble-souffle-995141.netlify.app//software-solution">Explore more <i class="bi bi-arrow-up-right"></i></a>
         </div>
       </div>
       <div class="col-lg-7 d-none d-lg-block my-padi">
@@ -109,7 +110,7 @@
                     <div class="swiper-slide">
                         <div class="pt-md-0 pt-lg-5 slide">
                             <div class="card">
-                                <img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="{{ .Title }}" class="img-fluid" style="height: 200px !important;" />
+                                <img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="{{ .Title }}" class="img-fluid clients-image" />
                                 <p>{{ .Title | truncate 25 }}</p>
                                 <a href="/portfolio/{{$counter}}/" class="btn">View Details <i class="bi bi-arrow-up-right"></i></a>
                             </div>
@@ -134,8 +135,8 @@
       <h2>Latest News and Blog</h2>
     </header>
     <div class="row mt-5 my-padi">
-      {{ range where .Site.RegularPages "Type" "feature" }}
-      <div class="col-lg-6 featured-blogs p-5 mb-3" style="background-image: url('{{ .Params.image }}');">
+      {{ range where .Site.RegularPages "Type" "featured" }}
+      <div class="col-lg-6 featured-blogs p-5 mb-3" style="background-image: url('{{ .Params.image }}'); background-position: top;">
         <p class="tag">Featured</p>
         <a href="{{.Permalink}}">
           <h2>{{.Title}}</h2>
@@ -214,7 +215,7 @@
           <img src="{{ .Site.BaseURL }}/assets/img/logo-2.png" class="img-fluid" alt="" />
         </div>
         <div class="swiper-slide px-5 px-lg-0">
-          <img src="a{{ .Site.BaseURL }}/assets/img/logo-3.png" class="img-fluid" alt="" />
+          <img src="{{ .Site.BaseURL }}/assets/img/logo-3.png" class="img-fluid" alt="" />
         </div>
         <div class="swiper-slide px-5 px-lg-0">
           <img src="{{ .Site.BaseURL }}/assets/img/logo-4.png" class="img-fluid" alt="" />
@@ -241,7 +242,7 @@
         </p>
 
         <div class="btn m-0 mt-5 my-padi">
-          <a class="btn-getstarted" href="mailto:contact@website.com">Contact Us <i
+          <a class="btn-getstarted" href="mailto:inquiry@catalystneuro.com">Contact Us <i
               class="bi bi-arrow-up-right"></i></a>
         </div>
       </div>

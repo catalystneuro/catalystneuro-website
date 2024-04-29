@@ -30,15 +30,6 @@
 
   
   <link href="http://localhost:1313//assets/css/main.css" rel="stylesheet" />
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var newVideo = document.getElementById('newVideo');
-      newVideo.addEventListener('loadedmetadata', function () {
-        newVideo.currentTime = 1.5; 
-      });
-    });
-  </script>
 </head>
 
   <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
@@ -56,19 +47,19 @@
 
     
     <nav id="navmenu" class="navmenu">
-      <ul>
+      <ul class="headlist">
         <li><a href="http://localhost:1313/" class="active">Home</a></li>
         <li><a href="http://localhost:1313//mission">Mission</a></li>
-        <li class="dropdown has-dropdown">
-          <a href="#"
-            ><span>Portfolio</span> <i class="bi bi-chevron-down"></i
-          ></a>
-          <ul class="dd-box-shadow">
-            <li>
-              <a href="http://localhost:1313//software-solution">Software</a>
+        <li class="dropdown-center">
+          <button class="dropdown-toggle border-0 bg-transparent w-100" data-bs-toggle="dropdown" type="button">
+            <span>Portfolio</span>
+          </button>
+          <ul class="dropdown-menu w-100">
+            <li class="text-center">
+              <a class="dropdown-item" href="http://localhost:1313//software-solution">Software</a>
             </li>
 
-            <li><a href="http://localhost:1313//portfolio">Client</a></li>
+            <li class="text-center"><a class="dropdown-item" href="http://localhost:1313//portfolio">Client</a></li>
           </ul>
         </li>
 
@@ -116,32 +107,12 @@
     <div class="row">
       <div class="col-lg-9 categories">
         
-        <a href='http://localhost:1313//categories/category-3'
-          >category-3</a
-        >
-        
-        <a href='http://localhost:1313//categories/category1'
-          >category1</a
-        >
-        
-        <a href='http://localhost:1313//categories/category2'
-          >category2</a
-        >
-        
-        <a href='http://localhost:1313//categories/category3'
-          >category3</a
-        >
-        
-        <a href='http://localhost:1313//categories/category4'
-          >category4</a
-        >
-        
-        <a href='http://localhost:1313//categories/category5'
-          >category5</a
-        >
-        
         <a href='http://localhost:1313//categories/neuro'
           >neuro</a
+        >
+        
+        <a href='http://localhost:1313//categories/outreach'
+          >outreach</a
         >
         
       </div>
@@ -174,7 +145,7 @@
       
       <div class="col-lg-4 mb-5" id="page-1">
         <div class="card">
-          <img src="http://localhost:1313/assets/img/0v8a3671.jpg" alt="CatalystNeuro Company Retreat in Barcelona Image" />
+          <img src="http://localhost:1313/assets/img/whatsapp-image-2024-04-22-at-09.50.24.jpeg" alt="CatalystNeuro Company Retreat in Barcelona Image" />
           <p><span>Neuro </span></p>
           <h4>
             CatalystNeuro Company Retreat in Barcelona
@@ -182,9 +153,9 @@
           <div class="info">
             <p>April 7, 2024</p>
             <div class="dot"></div>
-            <p> 3 minute</p>
+            <p> 5 minute</p>
           </div>
-          <a href="http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula-1/">READ MORE ></a>
+          <a href="http://localhost:1313/blog/catalystneuro-company-retreat-in-barcelona/">READ MORE ></a>
         </div>
       </div>
       
@@ -237,8 +208,8 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/mission">Mission</a></li>
-          <li><a href="/software">Software</a></li>
-          <li><a href="/clients">Clients</a></li>
+          <li><a href="/software-solution">Software</a></li>
+          <li><a href="/portfolio">Clients</a></li>
           <li><a href="/team">Team</a></li>
         </ul>
       </div>
@@ -246,7 +217,7 @@
       <div class="col-lg-2 col-6 footer-links my-padi">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="/work-wih-us">Work with us</a></li>
+          <li><a href="/work-with-us">Work with us</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="mailto:contact@website.com">Contact Us</a></li>
         </ul>
