@@ -31,15 +31,6 @@
 
   
   <link href="http://localhost:1313//assets/css/main.css" rel="stylesheet" />
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var newVideo = document.getElementById('newVideo');
-      newVideo.addEventListener('loadedmetadata', function () {
-        newVideo.currentTime = 1.5; 
-      });
-    });
-  </script>
 </head>
 
   <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
@@ -57,19 +48,19 @@
 
     
     <nav id="navmenu" class="navmenu">
-      <ul>
+      <ul class="headlist">
         <li><a href="http://localhost:1313/" class="active">Home</a></li>
         <li><a href="http://localhost:1313//mission">Mission</a></li>
-        <li class="dropdown has-dropdown">
-          <a href="#"
-            ><span>Portfolio</span> <i class="bi bi-chevron-down"></i
-          ></a>
-          <ul class="dd-box-shadow">
-            <li>
-              <a href="http://localhost:1313//software-solution">Software</a>
+        <li class="dropdown-center">
+          <button class="dropdown-toggle border-0 bg-transparent w-100" data-bs-toggle="dropdown" type="button">
+            <span>Portfolio</span>
+          </button>
+          <ul class="dropdown-menu w-100">
+            <li class="text-center">
+              <a class="dropdown-item" href="http://localhost:1313//software-solution">Software</a>
             </li>
 
-            <li><a href="http://localhost:1313//portfolio">Client</a></li>
+            <li class="text-center"><a class="dropdown-item" href="http://localhost:1313//portfolio">Client</a></li>
           </ul>
         </li>
 
@@ -103,16 +94,17 @@
 <section id="hero" class="hero">
   <div class="container">
     <div class="row align-items-center d-flex justify-content-between">
-      <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-12 my-padi" data-aos="fade-up" data-aos-delay="200">
-        <h2>Write a Good Heading for this header.</h2>
+      <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-12 my-padi mt-0" data-aos="fade-up" data-aos-delay="200">
+        <h2>CatalystNeuro</h2>
         <br />
-        <p>
-          The future of neuroscience will be driven by collaboration between labs. 
+        <p class="pb-5">
+          Driving collaboration in neurophysiology through software and data engineering
         </p>
         <div class="btn m-0 p-0 mt-5">
-          <a class="btn-getstarted" href="mailto:contact@website.com">Contact Us <i
-              class="bi bi-arrow-up-right"></i></a>
+          <a class="btn-getstarted" href="mailto:contact@website.com">Contact Us <i class="bi bi-arrow-up-right"></i></a>
+        
         </div>
+      
       </div>
       <div class="col-xxl-7 col-lg-7 col-md-7 col-sm-12 img">
         <img data-aos="fade-up" data-aos-delay="100" src="http://localhost:1313/assets/img/hero-img.png"
@@ -163,7 +155,7 @@
           These libraries are developed by a team that focuses specifically on neural data and good software practices. Our projects are packaged, documented, and tested for robustness and ease of use. Everything we build is released as it is developed under a permissive license. 
         </p>
         <div class="btn m-0 p-0 mt-5">
-          <a class="btn-getstarted" href="/contact-us">Explore more <i class="bi bi-arrow-up-right"></i></a>
+          <a class="btn-getstarted" href="https://voluble-souffle-995141.netlify.app//software-solution">Explore more <i class="bi bi-arrow-up-right"></i></a>
         </div>
       </div>
       <div class="col-lg-7 d-none d-lg-block my-padi">
@@ -209,7 +201,7 @@
                     <div class="swiper-slide">
                         <div class="pt-md-0 pt-lg-5 slide">
                             <div class="card">
-                                <img src="http://localhost:1313/assets/img/portfolio-6.jpeg" alt="Axona Data Processing Columbia University" class="img-fluid" style="height: 200px !important;" />
+                                <img src="http://localhost:1313/assets/img/portfolio-6.jpeg" alt="Axona Data Processing Columbia University" class="img-fluid clients-image" />
                                 <p>Axona Data Processing …</p>
                                 <a href="/portfolio/1/" class="btn">View Details <i class="bi bi-arrow-up-right"></i></a>
                             </div>
@@ -222,7 +214,7 @@
                     <div class="swiper-slide">
                         <div class="pt-md-0 pt-lg-5 slide">
                             <div class="card">
-                                <img src="http://localhost:1313/assets/img/portfolio-5.png" alt="DANDI MIT" class="img-fluid" style="height: 200px !important;" />
+                                <img src="http://localhost:1313/assets/img/portfolio-5.png" alt="DANDI MIT" class="img-fluid clients-image" />
                                 <p>DANDI MIT</p>
                                 <a href="/portfolio/2/" class="btn">View Details <i class="bi bi-arrow-up-right"></i></a>
                             </div>
@@ -235,7 +227,7 @@
                     <div class="swiper-slide">
                         <div class="pt-md-0 pt-lg-5 slide">
                             <div class="card">
-                                <img src="http://localhost:1313/assets/img/portfolio-5.png" alt="Data engineering speech neuroscience  collaboration UCSF" class="img-fluid" style="height: 200px !important;" />
+                                <img src="http://localhost:1313/assets/img/portfolio-5.png" alt="Data engineering speech neuroscience  collaboration UCSF" class="img-fluid clients-image" />
                                 <p>Data engineering speech …</p>
                                 <a href="/portfolio/3/" class="btn">View Details <i class="bi bi-arrow-up-right"></i></a>
                             </div>
@@ -248,7 +240,7 @@
                     <div class="swiper-slide">
                         <div class="pt-md-0 pt-lg-5 slide">
                             <div class="card">
-                                <img src="http://localhost:1313/assets/img/portfolio-7.jpeg" alt="Data Science Core of Ripple U19 Stanford University" class="img-fluid" style="height: 200px !important;" />
+                                <img src="http://localhost:1313/assets/img/portfolio-7.jpeg" alt="Data Science Core of Ripple U19 Stanford University" class="img-fluid clients-image" />
                                 <p>Data Science Core of …</p>
                                 <a href="/portfolio/4/" class="btn">View Details <i class="bi bi-arrow-up-right"></i></a>
                             </div>
@@ -261,7 +253,7 @@
                     <div class="swiper-slide">
                         <div class="pt-md-0 pt-lg-5 slide">
                             <div class="card">
-                                <img src="http://localhost:1313/assets/img/slide-4.jpg" alt="Data engineering speech neuroscience  collaboration UCSF" class="img-fluid" style="height: 200px !important;" />
+                                <img src="http://localhost:1313/assets/img/slide-4.jpg" alt="Data engineering speech neuroscience  collaboration UCSF" class="img-fluid clients-image" />
                                 <p>Data engineering speech …</p>
                                 <a href="/portfolio/5/" class="btn">View Details <i class="bi bi-arrow-up-right"></i></a>
                             </div>
@@ -287,10 +279,10 @@
     </header>
     <div class="row mt-5 my-padi">
       
-      <div class="col-lg-6 featured-blogs p-5 mb-3" style="background-image: url('/assets/img/blog-1.png');">
+      <div class="col-lg-6 featured-blogs p-5 mb-3" style="background-image: url('assets/img/img_8632-2.jpeg'); background-position: top;">
         <p class="tag">Featured</p>
-        <a href="http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula-4/">
-          <h2>Sed a facilisis ante. Nulla vehicula vehicula</h2>
+        <a href="http://localhost:1313/blog/catalystneuro-at-cosyne-2024/">
+          <h2>CatalystNeuro at Cosyne 2024</h2>
         </a>
       </div>
       
@@ -303,30 +295,23 @@
 
           
           <li>
+            <p class="date">April 22, 2024</p>
+            <a href="http://localhost:1313/blog/catalystneuro-at-cosyne-2024/">
+              <h4>CatalystNeuro at Cosyne 2024</h4>
+            </a>
+          </li>
+          
+          <li>
+            <p class="date">April 22, 2024</p>
+            <a href="http://localhost:1313/blog/bridging-continents-catalystneuro-at-the-african-brain-data-science-academy/">
+              <h4>CatalystNeuro at the African Brain Data Science Academy</h4>
+            </a>
+          </li>
+          
+          <li>
             <p class="date">April 7, 2024</p>
-            <a href="http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula-1/">
+            <a href="http://localhost:1313/blog/catalystneuro-company-retreat-in-barcelona/">
               <h4>CatalystNeuro Company Retreat in Barcelona</h4>
-            </a>
-          </li>
-          
-          <li>
-            <p class="date">April 7, 2024</p>
-            <a href="http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula-3/">
-              <h4>Sed a facilisis ante. Nulla vehicula vehicula</h4>
-            </a>
-          </li>
-          
-          <li>
-            <p class="date">April 7, 2024</p>
-            <a href="http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula-4/">
-              <h4>Sed a facilisis ante. Nulla vehicula vehicula</h4>
-            </a>
-          </li>
-          
-          <li>
-            <p class="date">April 7, 2024</p>
-            <a href="http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula-2/">
-              <h4>Sed a facilisis ante. Nulla vehicula vehicula 1</h4>
             </a>
           </li>
           
@@ -387,7 +372,7 @@
           <img src="http://localhost:1313//assets/img/logo-2.png" class="img-fluid" alt="" />
         </div>
         <div class="swiper-slide px-5 px-lg-0">
-          <img src="ahttp://localhost:1313//assets/img/logo-3.png" class="img-fluid" alt="" />
+          <img src="http://localhost:1313//assets/img/logo-3.png" class="img-fluid" alt="" />
         </div>
         <div class="swiper-slide px-5 px-lg-0">
           <img src="http://localhost:1313//assets/img/logo-4.png" class="img-fluid" alt="" />
@@ -414,7 +399,7 @@
         </p>
 
         <div class="btn m-0 mt-5 my-padi">
-          <a class="btn-getstarted" href="mailto:contact@website.com">Contact Us <i
+          <a class="btn-getstarted" href="mailto:inquiry@catalystneuro.com">Contact Us <i
               class="bi bi-arrow-up-right"></i></a>
         </div>
       </div>
@@ -463,8 +448,8 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/mission">Mission</a></li>
-          <li><a href="/software">Software</a></li>
-          <li><a href="/clients">Clients</a></li>
+          <li><a href="/software-solution">Software</a></li>
+          <li><a href="/portfolio">Clients</a></li>
           <li><a href="/team">Team</a></li>
         </ul>
       </div>
@@ -472,7 +457,7 @@
       <div class="col-lg-2 col-6 footer-links my-padi">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="/work-wih-us">Work with us</a></li>
+          <li><a href="/work-with-us">Work with us</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="mailto:contact@website.com">Contact Us</a></li>
         </ul>

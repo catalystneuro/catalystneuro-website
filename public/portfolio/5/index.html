@@ -30,15 +30,6 @@
 
   
   <link href="http://localhost:1313//assets/css/main.css" rel="stylesheet" />
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var newVideo = document.getElementById('newVideo');
-      newVideo.addEventListener('loadedmetadata', function () {
-        newVideo.currentTime = 1.5; 
-      });
-    });
-  </script>
 </head>
 
   <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
@@ -56,19 +47,19 @@
 
     
     <nav id="navmenu" class="navmenu">
-      <ul>
+      <ul class="headlist">
         <li><a href="http://localhost:1313/" class="active">Home</a></li>
         <li><a href="http://localhost:1313//mission">Mission</a></li>
-        <li class="dropdown has-dropdown">
-          <a href="#"
-            ><span>Portfolio</span> <i class="bi bi-chevron-down"></i
-          ></a>
-          <ul class="dd-box-shadow">
-            <li>
-              <a href="http://localhost:1313//software-solution">Software</a>
+        <li class="dropdown-center">
+          <button class="dropdown-toggle border-0 bg-transparent w-100" data-bs-toggle="dropdown" type="button">
+            <span>Portfolio</span>
+          </button>
+          <ul class="dropdown-menu w-100">
+            <li class="text-center">
+              <a class="dropdown-item" href="http://localhost:1313//software-solution">Software</a>
             </li>
 
-            <li><a href="http://localhost:1313//portfolio">Client</a></li>
+            <li class="text-center"><a class="dropdown-item" href="http://localhost:1313//portfolio">Client</a></li>
           </ul>
         </li>
 
@@ -358,8 +349,8 @@ ndx-hierarchical-behavioral-data, an NWB extension for storing hierarchical beha
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/mission">Mission</a></li>
-          <li><a href="/software">Software</a></li>
-          <li><a href="/clients">Clients</a></li>
+          <li><a href="/software-solution">Software</a></li>
+          <li><a href="/portfolio">Clients</a></li>
           <li><a href="/team">Team</a></li>
         </ul>
       </div>
@@ -367,7 +358,7 @@ ndx-hierarchical-behavioral-data, an NWB extension for storing hierarchical beha
       <div class="col-lg-2 col-6 footer-links my-padi">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="/work-wih-us">Work with us</a></li>
+          <li><a href="/work-with-us">Work with us</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="mailto:contact@website.com">Contact Us</a></li>
         </ul>
